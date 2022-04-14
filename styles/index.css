@@ -1,0 +1,150 @@
+/* eliminamos culaquier borde o espacio que exista por defecto */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(38, 19, 19);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title{
+  color: black;
+}
+
+/* Se agrega padding*/
+.header {
+  overflow: hidden;
+  padding: 2px 2px;
+
+}
+
+/* Estilo de header*/
+.header a {
+  float: left;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Estilos del logo*/
+.header a.logo {
+  padding: 6px;
+  margin: 0;
+  margin: 1% 2%;
+  padding: 0;
+}
+
+/* Cuando se pasa el mouse por encima*/
+.header a:hover {
+  color: rgb(21, 12, 12);
+  text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738),
+    0 0 0.2em rgba(13, 7, 7, 0.738);
+}
+
+/*  cambio de color cuando se le de click al menu para que pase a la ventana correspondiente*/
+.header a.active {
+  color: rgb(0, 183, 255);
+}
+
+/* Envia texto a la derecha */
+.header-right {
+  float: right;
+  margin: 2% 3%;
+}
+
+/* Se pone el menu hacia abajo cuando esta en pantallas pequeñas */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* Se agregan estilos al index*/
+.image-index {
+  text-align: center;
+  border-radius: 30px;
+  width: 70%;
+  margin: 0px 15% 5% 15%;
+}
+
+.main-index {
+  color: rgba(240, 248, 255, 0.798);
+  display: inline-block;
+  width: 90%;
+  margin: 0% 5%;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  margin-bottom: 4%;
+  font-size: 40px;
+}
+
+.text-index {
+  margin: 0px 10%;
+  font-size: 20px;
+}
+
+/* Estilos a los personajes */
+
+.image-character {
+  float: left;
+  border-radius: 50%;
+  width: 300px;
+  margin: 0px 5% 2% 0px;
+}
+
+.main-character {
+  color: rgba(240, 248, 255, 0.798);
+  display: inline-block;
+  width: 60%;
+  margin: 0% 20%;
+}
+
+.text-index {
+  margin: 0px 10%;
+  font-size: 20px;
+}
+
+ul{
+  color: aliceblue;
+  width: 60%;
+  margin: 0% 20%;
+  text-align: left;
+  /* text-justify: inter-cluster; */
+}
+
+/* Decoracion de los links y textos */
+
+ul p{
+  color: rgba(186, 186, 186, 0.781);
+}
+
+p a{
+  color: aqua;
+  text-decoration: none;
+}
+
+li a{
+  color: aqua;
+  text-decoration: none;
+}
+
+li {
+  direction: row;
+}
+
+.nav-item{
+
+}

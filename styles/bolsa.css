@@ -1,0 +1,38 @@
+.header {
+    overflow: hidden;
+    padding: 2px 2px;
+  
+  }
+
+.header a {
+    float: left;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    padding: 6px;
+    margin: 0;
+    margin: 1% 2%;
+    padding: 0;
+}
+
+.card-text{
+    color: black;
+}
+
+.btn.btn-primary{
+    background-color: rgb(255, 0, 0);
+    
+    border-color: black;
+}
+
+/*  cambio de color cuando se le de click al menu para que pase a la ventana correspondiente*/
+.header a.active {
+    color: rgb(0, 183, 255);
+  }
