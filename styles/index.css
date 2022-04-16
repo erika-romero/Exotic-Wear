@@ -8,8 +8,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.title{
-  color: black;
+.title {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 4%;
+  font-size: 40px;
 }
 
 /* Se agrega padding*/
@@ -50,9 +53,10 @@ body {
     0 0 0.2em rgba(13, 7, 7, 0.738);
 }
 
-/*  cambio de color cuando se le de click al menu para que pase a la ventana correspondiente*/
+/*Hace sobra para */
 .header a.active {
-  color: rgb(0, 183, 255);
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738), 0 0 0.2em rgba(13, 7, 7, 0.738);
 }
 
 /* Envia texto a la derecha */
@@ -81,79 +85,7 @@ body {
   margin: 0px 15% 5% 15%;
 }
 
-.main-index {
-  color: rgba(240, 248, 255, 0.798);
-  display: inline-block;
-  width: 90%;
-  margin: 0% 5%;
-}
 
-h1 {
-  color: aliceblue;
-  text-align: center;
-  margin-bottom: 4%;
-  font-size: 40px;
-}
 
-.text-index {
-  margin: 0px 10%;
-  font-size: 20px;
-}
 
-/* Estilos a los personajes */
 
-.image-character {
-  float: left;
-  border-radius: 50%;
-  width: 300px;
-  margin: 0px 5% 2% 0px;
-}
-
-.main-character {
-  color: rgba(240, 248, 255, 0.798);
-  display: inline-block;
-  width: 60%;
-  margin: 0% 20%;
-}
-
-.text-index {
-  margin: 0px 10%;
-  font-size: 20px;
-}
-
-ul{
-  color: aliceblue;
-  width: 60%;
-  margin: 0% 20%;
-  text-align: left;
-  /* text-justify: inter-cluster; */
-}
-
-/* Decoracion de los links y textos */
-
-ul p{
-  color: rgba(186, 186, 186, 0.781);
-}
-
-p a{
-  color: aqua;
-  text-decoration: none;
-}
-
-li a{
-  color: aqua;
-  text-decoration: none;
-}
-
-li {
-  direction: row;
-}
-
-.nav-item{
-
-}
-
-.main-index .fondo{
-  display:block;
-  margin:auto;
-}
