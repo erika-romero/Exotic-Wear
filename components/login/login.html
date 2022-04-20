@@ -11,19 +11,13 @@
 <!-- partial:index.partial.html -->
 <div id="login-form-wrap">
   <h2>Exotics Wear</h2>
-  <form id="login-form">
-    <p>
-    <input type="text" id="username" name="username" placeholder="Usuario" required><i class="validation"><span></span><span></span></i>
-    </p>
-    <p>
-    <input type="password" id="password" name="password" placeholder="Contraseña" required><i class="validation"><span></span><span></span></i>
-    </p>
-    <p>
-    <input type="submit" id="login" value="Login">
-    </p>
+  <form action="sesion.php" id="login-form" method="POST">
+    <p><input type="text" id="usuario" name="username" placeholder="Usuario" required><i class="validation"><span></span><span></span></i></p>
+    <p><input type="password" id="clave" name="password" placeholder="Contraseña" required><i class="validation"><span></span><span></span></i></p>
+    <p><input type="submit" id="login" value="Login"></p>
   </form>
   <div id="create-account-wrap">
-    <p>¿No tiene un usuario? <a href="#">Crear una cuenta</a><p>
+    <p>¿No tiene un usuario? <a href="registro.html">Crear una cuenta</a><p>
   </div><!--create-account-wrap-->
 </div><!--login-form-wrap-->
 <!-- partial -->

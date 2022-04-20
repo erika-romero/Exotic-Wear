@@ -11,7 +11,8 @@ body {
 .title {
   color: rgb(0, 0, 0);
   text-align: center;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
+  margin-top: 2%;
   font-size: 40px;
 }
 
@@ -20,7 +21,6 @@ body {
   overflow: hidden;
   padding: 2px 2px;
   background-color: #FFCC00;
-  height: 100px;
 }
 
 /* Estilo de header*/
