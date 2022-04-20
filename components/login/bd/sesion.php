@@ -30,7 +30,7 @@ if(isset($userBd) && isset($pwdBD)){
 }
 else{
 
-    echo "<img src=\"https://i.ibb.co/nQxdpFM/images-q-tbn-ANd9-Gc-Q0o-TV7-Zv-E42-CVw-Rvs1s-MQMXh6-Jh5q-B3jz-M7b-JTDr-Ft-LC-i-p-KQFqll-Eg-HTp-IDZ0.jpg\" alt=\"images-q-tbn-ANd9-Gc-Q0o-TV7-Zv-E42-CVw-Rvs1s-MQMXh6-Jh5q-B3jz-M7b-JTDr-Ft-LC-i-p-KQFqll-Eg-HTp-IDZ0\" border=\"0\">"."<br>";
+    //echo "<img src=\"https://i.ibb.co/nQxdpFM/images-q-tbn-ANd9-Gc-Q0o-TV7-Zv-E42-CVw-Rvs1s-MQMXh6-Jh5q-B3jz-M7b-JTDr-Ft-LC-i-p-KQFqll-Eg-HTp-IDZ0.jpg\" alt=\"images-q-tbn-ANd9-Gc-Q0o-TV7-Zv-E42-CVw-Rvs1s-MQMXh6-Jh5q-B3jz-M7b-JTDr-Ft-LC-i-p-KQFqll-Eg-HTp-IDZ0\" border=\"0\">"."<br>";
     return print('<h1>Ingreso no permitido<br>Usuario y/o contraseña invalido</h1>');
 }
 
