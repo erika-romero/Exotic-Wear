@@ -9,8 +9,8 @@ $usuario = $_POST['usuario'];
 $clave   = $_POST['clave'];
 
 $sql = "SELECT * FROM usuarios 
-        WHERE usuario    = '{$usuario}' 
-        AND   contrasena = '{$clave}'";
+        WHERE Usuario    = '{$usuario}' 
+        AND   Contraseña = '{$clave}'";
 
 //echo $sql;die();
 
@@ -23,9 +23,9 @@ foreach ($connection->query($sql) as $value) {
 
 if(isset($userBd) && isset($pwdBD)){
 
-    header("location: ingreso.php");
+    //header("location: login.html");
 
-    //return print("Exitos lo lograste");
+    return print("Exitos lo lograste");
 
 }
 else{
@@ -35,34 +35,5 @@ else{
 }
 
 
-/*$usuario= $_POST['usuario'];
-$clave= $_POST['clave'];
-session_start();
-$_SESSION['$usuario']=$usuario;*/
 
-/*try {
-    $dbhost = 'localhost';
-    $dbname='formulario';
-    $dbuser = 'erika';
-    $dbpass = '123321..';
-
-    $connection = new PDO("pgsql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
-
-    $sql = "SELECT*FROM usuarios where usuario='$usuario' and contrasena='$clave'";
-    $consulta= pg_query($conexion,$query);
-    $cantidad = pg_num_rows($consulta);
-    if($cantidad>0){
-   
-        header("location: ingreso.php");
-    } else {
-        echo "Datos incorrectos";
-    }
-   
-  pg_free_result($consulta);
-   pg_close($conexion);
-
-    
-} catch (PDOException $e) {
-    die("Error message: " . $e->getMessage());
-}*/
 ?>
