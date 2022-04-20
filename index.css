@@ -1,0 +1,91 @@
+/* eliminamos culaquier borde o espacio que exista por defecto */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 4%;
+  font-size: 40px;
+}
+
+/* Se agrega padding*/
+.header {
+  overflow: hidden;
+  padding: 2px 2px;
+  background-color: #FFCC00;
+  height: 100px;
+}
+
+/* Estilo de header*/
+.header a {
+  float: left;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Estilos del logo*/
+.header .logo img {
+  padding: 6px;
+  margin: 0;
+  margin: 1% 2%;
+  padding: 0;
+  width: 93px;
+ 
+}
+
+/* Cuando se pasa el mouse por encima*/
+.header a:hover {
+  color: rgb(21, 12, 12);
+  text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738),
+    0 0 0.2em rgba(13, 7, 7, 0.738);
+}
+
+/*Hace sobra para */
+.header a.active {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738), 0 0 0.2em rgba(13, 7, 7, 0.738);
+}
+
+/* Envia texto a la derecha */
+.header-right {
+  float: right;
+  margin: 2% 3%;
+}
+
+/* Se pone el menu hacia abajo cuando esta en pantallas pequeñas */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* Se agregan estilos al index*/
+.image-index {
+  text-align: center;
+  border-radius: 30px;
+  width: 70%;
+  margin: 0px 15% 5% 15%;
+}
+
+
+
+
+
