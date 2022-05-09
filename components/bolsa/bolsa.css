@@ -55,7 +55,7 @@ body {
     text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738), 0 0 0.2em rgba(13, 7, 7, 0.738);
   }
 
-/*Estilos para la clase tittle*/
+/*Estilos para la clase title*/
 .title{
     color: rgb(0, 0, 0);
     text-align: center;
@@ -64,22 +64,27 @@ body {
 }
 
 /*Estilo de las tarjetas*/
-body {
-    text-align: center;
-    padding: 30px;
-    background: #f8f4f2;
+
+.container{
+  display: flex;
+}
+.cards {
+    text-align: left;
+    margin: 50px;
+    padding: 2px;
+    background: #f5f2f0;
     font-family: Arial;
   }
   
   .a-box {
     display: inline-block;
-    width: 240px;
+    width: 200px;
     text-align: center;
   }
   
   .img-container {
-      height: 230px;
-      width: 200px;
+      height: 200px;
+      width: px;
       overflow: hidden;
       border-radius: 0px 0px 20px 20px;
       display: inline-block;
@@ -91,6 +96,7 @@ body {
       margin: -35px 0px 0px -70px;
   }
   
+  /*Fondo blanco de la tarjeta*/
   .inner-skew {
       display: inline-block;
       border-radius: 20px;
@@ -99,7 +105,7 @@ body {
       transform: skew(0deg, 13deg);
       font-size: 0px;
       margin: 30px 0px 0px 0px;
-      background: #c8c2c2;
+      background: #f9f9f9;
       height: 250px;
       width: 200px;
   }
@@ -108,7 +114,7 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
     padding: 110px 20px 20px 20px;
     border-radius: 20px;
-    background: #fff;
+    background: #FFCC00;
     margin: -100px 0px 0px 0px;
     line-height: 19px;
     font-size: 14px;
@@ -116,7 +122,7 @@ body {
   
   .text-container h3 {
     margin: 5px 0px 5px 0px;
-    color: #FFCC00;
+    color: #060606;
     font-size: 18px;
   }
 
@@ -181,8 +187,3 @@ button:hover span {
      transform: scale(1);
     }
    }
-
-   .wrapper {
-    display: grid;
-    grid-template-rows: 100px 100p;
-  }
