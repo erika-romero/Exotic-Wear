@@ -1,73 +1,11 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: "Montserrat", sans-serif;
+.container .row{
+    justify-content: center;
+}
+.container .alert-success{
+    background-color: #FFCC00;
+    font-size: 20px;
 }
 
-.header{
-  overflow: hidden;
-  padding: 2px 2px;
-  background-color: #FFCC00;
-  height: 100px;
+.alert-success .badge-success{
+    color: black;
 }
-
-/* Envia texto a la derecha */
-.header-right {
-  float: right;
-  margin: 2% 3%;
-}
-
-.header a {
-  float: left;
-  color: rgb(0, 0, 0);
-  padding: 8px;
-  margin: 0 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-
-/*Estilo cuando el cursor se para encima*/
-.header a:hover {
-  color: rgb(4, 2, 21);
-  text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738),
-    0 0 0.2em rgba(13, 7, 7, 0.738);
-}
-
-/*Hace sombra para saber en que módulo estoy*/
-.header a.active {
-  color: rgb(0, 0, 0);
-  text-shadow: 1px 1px 2px black, 0 0 1em rgba(255, 255, 255, 0.738), 0 0 0.2em rgba(13, 7, 7, 0.738);
-}
-
-/*Carácteristicas del logo*/
-.header .logo img {
-  padding: 16px;
-  margin: 0;
-  margin: 1% 2%;
-  padding: 0;
-  width: 93px;
- 
-}
-
-.card-img, .card-img-bottom, .card-img-top {
-  width: 35%;
-  margin: 0 auto;
-
-}
-
-#ropa{
-margin-top: 20px;
-}
-
-/* .imagen{
-  float: left;
-  width: 25%;
-  margin: 4%;
-}*/
