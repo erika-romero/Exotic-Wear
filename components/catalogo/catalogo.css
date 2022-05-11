@@ -1,0 +1,11 @@
+.container .row{
+    justify-content: center;
+}
+.container .alert-success{
+    background-color: #FFCC00;
+    font-size: 20px;
+}
+
+.alert-success .badge-success{
+    color: black;
+}
