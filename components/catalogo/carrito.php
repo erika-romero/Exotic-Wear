@@ -1,4 +1,5 @@
 <?php
+  include '../login/bd/conexion.php';
 session_start();
 
 $mensaje="";
@@ -49,8 +50,21 @@ if(isset($_POST['btnAccion'])){
             $_SESSION['CARRITO'][$numeroProductos]=$producto;
         }
         //$mensaje=print_r($_SESSION,true);
+        $mensaje="Producto agregado al carrito";
 
 
+        break;
+        case 'Eliminar':
+            if(is_numeric(openssl_decrypt($_POST['id'],COD,KEY))){
+                $ID=openssl_decrypt($_POST['id'],COD,KEY);
+            foreach ($_SESSION['CARRITO'] as $indice => $producto) {
+               if($producto['ID']==$ID){
+                   unset($_SESSION['CARRITO'][$indice]);
+                   //$_SESSION['CARRITO']=array_values($_SESSION["CARRITO"]); 
+                   echo"<script>alert('Elemento eliminado...');</script>";
+               }
+            }
+            }
         break;
     }
 }

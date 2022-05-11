@@ -1,17 +1,18 @@
 <?php
-  include '../login/bd/conexion.php';
   include 'carrito.php';
   include 'templates/cabecera.php';
 ?>
 
 
     <br>
-
-    <div class="alert alert-success" role="alert" style="color: black;">
+    <?php if($mensaje!=""){?>
+      <div class="alert alert-success" role="alert" style="color: black;">
     <?php echo $mensaje;?>
-      
-      <a href="#" class="badge badge-success">Ver carrito</a>
+      <a href="./mostrarCarrito.php" class="badge badge-success">Ver carrito</a>
     </div>
+    
+    <?php }?>
+    
     <div class="row">
       <?php
         $sentencia=$connection->prepare("select * from inventario");
@@ -35,7 +36,7 @@
                 <input type="hidden" name="descripcion" id="descripcion" value="<?php echo openssl_encrypt($producto['descripcion'],COD,KEY);?>">
                 <input type="hidden" name="precio" id="precio" value="<?php echo openssl_encrypt($producto['precio'],COD,KEY);?>">
                 <input type="hidden" name="cantidad" id="cantidad" value="<?php echo openssl_encrypt(1,COD,KEY);;?>">
-                <button class="btn btn-primary" 
+                <button class="btn btn-dark" 
                 type="submit" 
                 name="btnAccion" 
                 value="Agregar">Agregar al carrito</button>
