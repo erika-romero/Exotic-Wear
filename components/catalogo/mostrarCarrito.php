@@ -50,13 +50,14 @@
                     <div class="form-group">
                         <label for="my-input">Correo de contacto:</label>
                         <input id="email"
+                        name="email"
                         type="email"
                         class="form-control"
                         placeholder="Por favor escribe tu correo"
                         required
                         >
                     </div>
-                    <small id="emailhelp" class="form-text text-muted">
+                    <small id="emailHelp" class="form-text text-muted">
                         Los productos se enviarán a este correo.
                     </small>
                 </div>

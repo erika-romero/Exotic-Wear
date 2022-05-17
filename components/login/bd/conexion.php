@@ -2,12 +2,12 @@
 try {
     $dbhost = '167.172.224.38';
     $dbname='login';
-    $dbuser = 'erika';
+    $dbuser = 'romero';
     $dbpass = '123321..';
     define("KEY","develoteca");
     define("COD","AES-128-ECB");
 
-    $connection = new PDO("pgsql:host={$dbhost};port=5432;dbname={$dbname}", $dbuser, $dbpass);
+    $connection = new PDO("mysql:host={$dbhost};port=3306;dbname={$dbname}", $dbuser, $dbpass);
     $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     
