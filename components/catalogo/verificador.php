@@ -13,7 +13,7 @@ $Secret="EAf2gegJvgJjBaPAGjExa8ozLCMXgEL_RhKTbpyyb-yuNNyVKZeO7QDI8VGgV2V34H_i7XG
     $AccessToken=$objRespuesta->access_token;
     print_r($AccessToken);
 
-    $ventas = curl_init("https://api-m.paypal.com/v1/payments/".$_GET['paymentID']);
+    $ventas = curl_init("https://api-m.paypal.com/v1/payments/payment/".$_GET['paymentID']);
     curl_setopt($venta,CURLOPT_HTTPHEADER,array("Content-Type: application/json","Authorization: Bearer".$AccessToken));
     $RespuestaVenta= curl_exec($venta);
     print_r($RespuestaVenta);
