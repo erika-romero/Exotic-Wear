@@ -1,6 +1,7 @@
 <?php
 try {
-    $dbhost = '167.172.224.38';
+    //$dbhost = '167.172.224.38';
+    $dbhost = 'localhost';
     $dbname='login';
     $dbuser = 'romero';
     $dbpass = '123321..';
