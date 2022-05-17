@@ -2,7 +2,7 @@
 try {
     $dbhost = '167.172.224.38';
     $dbname='login';
-    $dbuser = 'dani';
+    $dbuser = 'romero';
     $dbpass = '123321..';
     define("KEY","develoteca");
     define("COD","AES-128-ECB");
