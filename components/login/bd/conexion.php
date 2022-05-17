@@ -1,9 +1,9 @@
 <?php
 try {
-    //$dbhost = '167.172.224.38';
-    $dbhost = 'localhost';
+    $dbhost = '167.172.224.38';
+    //$dbhost = 'localhost';
     $dbname='login';
-    $dbuser = 'romero';
+    $dbuser = 'dani';
     $dbpass = '123321..';
     define("KEY","develoteca");
     define("COD","AES-128-ECB");
