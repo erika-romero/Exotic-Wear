@@ -76,7 +76,9 @@
                 return actions.order.create({
                     purchase_units: [{
                         amount: {
-                            value: '<?php echo $total?>'
+                            value: '<?php echo $total?>', 
+                            description: "Compra de productos:$<?php echo number_format($total,2);?>",
+                            custom:"<?php echo $SID;?>#<?php echo openssl_encrypt($idVenta,COD,KEY);?>"
                         }
                     }]
                 });
@@ -87,6 +89,7 @@
                 return actions.order.capture().then(function(orderData) {
                     // Successful capture! For demo purposes:
                     console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                    window.location="verificador.php?id="+orderData.id;
                     var transaction = orderData.purchase_units[0].payments.captures[0];
                     alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
 
